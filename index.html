@@ -31,7 +31,7 @@
             <button
               type="button"
               class="nav-toggle"
-              id="nav toggle"
+              id="nav-toggle"
               aria-label="nav toggler"
             >
               <i class="fas fa-bars"></i>
@@ -40,11 +40,11 @@
           <!--end of navbar header-->
           <!--navbar links-->
           <div class="nav-links" id="nav-links">
-            <a href="#home" class="nav-link">home</a>
-            <a href="#about" class="nav-link">about</a>
-            <a href="#services" class="nav-link">services</a>
-            <a href="#featured" class="nav-link">featured</a>
-            <a href="#gallery" class="nav-link">gallery</a>
+            <a href="#home" class="nav-link scrlnk">home</a>
+            <a href="#about" class="nav-link scrlnk">about</a>
+            <a href="#services" class="nav-link scrlnk">services</a>
+            <a href="#featured" class="nav-link scrlnk">featured</a>
+            <a href="#gallery" class="nav-link scrlnk">gallery</a></div>
 
           <!--end of navbar links-->
           <!--nav social media icons-->
@@ -70,7 +70,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             nemo repudiandae ab!
           </p>
-          <a href="#featured" class="btn-white">explore tours</a>
+          <a href="#featured" class="btn-white scrlnk">explore tours</a>
         </div>
       </div>
     </header>
@@ -393,28 +393,23 @@
         <h2 class="title">hot <span class="subtitle">deals</span></h2>
       </div>
       <!--end of title-->
+      <form action="https://formspree.io/paradox600@gmail.com" method="POST">
+        <div class="input-group">
+          <input type="email" name="email" class="form-control" placeholder="your email" />
+          <button type="submit" class="btn-submit">submit</button>
+        </div>
+      </form>
     </section>
-    <form action="https://formspree.io/paradox600@gmail.com" method="POST">
-      <div class="input-group">
-        <input
-          type="email"
-          name="email"
-          class="form-control"
-          placeholder="your email"
-        />
-        <button type="submit" class="btn-submit">submit</button>
-      </div>
-    </form>
-    <!--end of deals-->
+        <!--end of deals-->
     <!--footer-->
     <footer class="section footer">
       <!--footer links-->
       <div class="footer-links">
-        <a href="#home" class="footer-link">home</a>
-        <a href="#about" class="footer-link">about</a>
-        <a href="#services" class="footer-link">services</a>
-        <a href="#featured" class="footer-link">featured</a>
-        <a href="#gallery" class="footer-link">gallery</a>
+        <a href="#home" class="footer-link scrlnk">home</a>
+        <a href="#about" class="footer-link scrlnk">about</a>
+        <a href="#services" class="footer-link scrlnk">services</a>
+        <a href="#featured" class="footer-link scrlnk">featured</a>
+        <a href="#gallery" class="footer-link scrlnk">gallery</a>
       </div>
       <!--footer icons-->
       <div class="footer-icons">
@@ -431,9 +426,10 @@
       <!--copyright-->
       <p class="copyright">
         copyright &copy; backroads travel tours company
-        <span id="date">2020</span>. all rights reserved
+        <span id="date"></span>. all rights reserved
       </p>
     </footer>
     <!--javascript-->
+    <script src="./js/app.js"></script>
   </body>
 </html>
